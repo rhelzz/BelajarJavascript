@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Diameter Lingkaran</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Keliling Lingkaran Section -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card p-3 shadow">
+                    <h2 class="card-title">Hitung Keliling <br>Lingkaran</h2>
+                    <p>Rumus = 2 x π x r</p>
+                    <div class="mb-3">
+                        <label for="radiusKeliling" class="form-label">Masukkan Jari-jari :</label>
+                        <input type="number" id="radiusKeliling" placeholder="Jari-jari" class="form-control" />
+                    </div>
+                    <button class="btn btn-primary w-100" onclick="calculateKeliling()">Hitung Keliling</button>
+                    <p class="mt-3" id="resultKeliling"></p>
+                </div>
+            </div>
+
+            <!-- Diameter Lingkaran Section -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card p-3 shadow">
+                    <h2 class="card-title">Hitung Diameter Lingkaran</h2>
+                    <p>Rumus = 2 x r</p>
+                    <div class="mb-3">
+                        <label for="radiusDiameter" class="form-label">Masukan Jari-jari :</label>
+                        <input type="number" id="radiusDiameter" placeholder="Jari-jari" class="form-control" />
+                    </div>
+                    <button class="btn btn-success w-100" onclick="calculateDiameter()">Hitung Diameter</button>
+                    <p class="mt-3" id="resultDiameter"></p>
+                </div>
+            </div>
+
+            <!-- Luas Lingkaran Section -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card p-3 shadow">
+                    <h2 class="card-title">Hitung Luas <br>Lingkaran</h2>
+                    <p>Rumus : π x r²</p>
+                    <div class="mb-3">
+                        <label for="radiusLuas" class="form-label">Masukan Jari-jari :</label>
+                        <input type="number" id="radiusLuas" placeholder="Jari-jari" class="form-control" />
+                    </div>
+                    <button class="btn btn-warning w-100" onclick="calculateLuas()">Hitung Luas</button>
+                    <p class="mt-3" id="resultLuas"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
